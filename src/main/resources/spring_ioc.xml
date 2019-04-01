@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--跟标签，在跟标签内部配置Java对象-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="greedTea" class="com.qianfeng.spring2.water" ></bean>
+    <bean id="leader" class="com.qianfeng.spring2.Leader">
+        <property name="water" ref="greedTea"/>
+    </bean>
+</beans>
